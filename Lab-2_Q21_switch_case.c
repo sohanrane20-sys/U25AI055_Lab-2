@@ -1,0 +1,32 @@
+/*
+Objective: Q21 To perform aritmetic operation using switch case with case of char type
+Author: Sohan
+*/
+#include <stdio.h>
+int main() {
+	int a, b;
+	char operator;
+	printf("Enter operator: ");
+	scanf("%c", &operator);
+	printf("Enter first number: ");
+	scanf("%d", &a);
+	printf("Enter second number: ");
+	scanf("%d", &b);
+	switch (operator) {
+		case '+':
+			printf("%d", a + b);
+			break;
+		case '-':
+			printf("%d", a - b);
+			break;
+		case '*':
+			printf("%d", a * b);
+			break;
+		case '/':
+			printf("%d", a / b);
+			break;
+		default:
+			printf("Not valid");
+	}
+	return 0;
+}
